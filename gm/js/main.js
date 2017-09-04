@@ -17,7 +17,6 @@ $(document).ready(function(){
 		var tmpScrn = document.body.clientWidth;
 		
 		if($(this).scrollTop() > 400){
-			console.log(tmpScrn);
 			if(tmpScrn > 962){
 				$('.menu_unit_big').css("backgroundColor","#fff").css("position","fixed").css("top","0").css("left","10%").css("zIndex","1000");
 				$('.menu_unit_big span').css("backgroundColor","#aaa").css("height","30px").css("marginTop","10px");

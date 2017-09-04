@@ -1,3 +1,16 @@
+/*mini-slider*/
+.mini_slider{
+	width: 80%;
+	max-width: 1440px;
+	margin: 0 auto;
+	background-color: #F3F3F3;
+}
+.wrapper_mini_slider{
+	padding: 30px;
+	padding-bottom: 0px;
+	position: relative;
+}
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch

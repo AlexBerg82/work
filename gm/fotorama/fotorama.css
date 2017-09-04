@@ -1,3 +1,14 @@
+/*галерея*/
+.general_slider{
+	width: 80%;
+	margin: 0 auto;
+}
+.general_slider h2{
+	padding: 20px 0;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 20px;
+}
+
 /*!
  * Fotorama 4.6.4 | http://fotorama.io/license/
  */
@@ -5,16 +16,23 @@
 
 
 /*Slider*/
-.cd-slider-wrapper {
+.general_slider .cd-slider-wrapper {
 	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@media (max-width: 1140px) {
+.general_slider .cd-slider-wrapper {
 	width: 100%;
-	max-width: 1440px;
-	max-height: 500px;
-	margin: 0 auto;
+}
 }
 
-
-.fotorama{
-	margin: 0 auto;
+@media (max-width: 979px) {
+.general_slider{
+	width: 98%;
 }
-
+.general_slider .cd-slider-wrapper {
+	width: 100%;
+}
+}

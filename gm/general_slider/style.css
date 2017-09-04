@@ -1,74 +1,14 @@
-/*mini-slider*/
-.mini_slider{
-	width: 80%;
-	max-width: 1440px;
-	margin: 0 auto;
-	background-color: #F3F3F3;
-}
-.wrapper_mini_slider{
-	padding: 30px;
-	padding-bottom: 0px;
-	position: relative;
-}
-
-
-/*carousel*/
-.carousel-hider {
-	clear: both;
-    width: 85%;
-	margin: 0 auto;
-    overflow: hidden;
-}
-.carousel-list {    
-    list-style: none;
-    width: 10000px;
-    padding: 0px;
-    position: relative;
-}
-.carousel-element {
-    display: block;
-    margin-right: 25px;
-    float: left;
-	max-width: 150px;
-}
-.carousel-element img {
-    max-width: 150px;
-}
-.carousel-element p{
-    font-size: 11px;
-	color: #B5B5B5;
-}
-.carousel-arrow-left, .carousel-arrow-right {
-    display: block;
-    border: 1px solid grey;
-    padding: 3px 7px;
-	font-size: 15px;
-	font-weight: 700;
-		border-radius: 4px;
-		-wedkit-border-radius: 4px;
-		-moz-border-radius: 4px;
-		-khtml-border-radius: 4px;
-}
-.carousel-arrow-left:hover, .carousel-arrow-right:hover {
-    cursor: pointer;
-    background-color: #E8E8E8;
-	color:#fff;
-}
- .carousel-arrow-left {
-	float: left;
-	position: absolute;
-	left: 0;
-	top:60px;
-}
-.carousel-arrow-right {
-    float: right;
-	position: absolute;
-	right: 0;
-	top: 60px;
-}
-
-
 /*главный слайдер*/
+/*Slider*/
+.cd-slider-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 500px;
+  margin: 0 auto;
+  /* hide horizontal scrollbar on IE11 */
+  overflow: hidden;
+}
 .cd-filter {
   /* SVG animation style switcher - not needed in production */
   margin-top: 1em;
@@ -103,17 +43,6 @@
     margin-top: 2em;
   }
 }
-
-/*Slider*/
-.cd-slider-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  max-height: 500px;
-  margin: 0 auto;
-  /* hide horizontal scrollbar on IE11 */
-  overflow: hidden;
-}
 .cd-slider > li {
   position: absolute;
   top: 0;
@@ -134,7 +63,7 @@
 }
 .cd-slider .cd-svg-wrapper {
   /* using padding Hack to fix bug on IE - svg height not properly calculated */
-  height: 0;
+  height: 0;  
   padding-bottom: 57.15%;
 }
 .cd-slider-wrapper svg {
@@ -229,25 +158,4 @@
 }
 .no-touch .cd-slider-controls a:hover {
   background-color: #ffffff;
-}
-
-
-/*галерея*/
-.general_slider{
-	width: 80%;
-	margin: 0 auto;
-}
-.general_slider h2{
-	padding: 20px 0;
-	border-bottom: 1px solid #aaa;
-	margin-bottom: 20px;
-}
-
-
-
-@media (max-width: 1023px) {
-
-.general_slider{
-	width: 98%;
-}
 }
