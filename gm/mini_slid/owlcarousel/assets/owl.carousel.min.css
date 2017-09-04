@@ -7,12 +7,12 @@
 
 .owl-prev{
 	margin-left: -40px; 
-	top: 40px;
+	top: 30%;
 	left: 0;
 }
 .owl-next{
 	margin-right: -40px; 
-	top: 40px;
+	top: 30%;
 	right: 0;
 }
 
@@ -35,56 +35,9 @@
 	color: red;
 }
 
-@media screen and (min-width: 1367px) and (max-width: 1440px){
-.owl-prev,.owl-next{
-	top: 37px;
-}
-}
 
-@media screen and (min-width: 1100px) and (max-width: 1366px){
+@media screen and (min-width: 480px) and (max-width: 599px){
 .owl-prev,.owl-next{
-	top: 37px;
-}
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1099px){
-.owl-prev,.owl-next{
-	top: 37px;
-}
-}
-
-@media screen and (min-width: 1000px) and (max-width: 1023px){
-.owl-prev,.owl-next{
-	top: 37px;
-}
-}
-
-@media screen and (min-width: 560px) and (max-width: 598px){
-.owl-prev,.owl-next{
-	top: 75px;
-}
-}
-
-@media screen and (min-width: 480px) and (max-width: 559px){
-.owl-prev,.owl-next{
-	top: 60px;
-}
-}
-
-@media screen and (min-width: 440px) and (max-width: 479px){
-.owl-prev,.owl-next{
-	top: 50px;
-}
-}
-
-@media screen and (min-width: 400px) and (max-width: 439px){
-.owl-prev,.owl-next{
-	top: 45px;
-}
-}
-
-@media screen and (min-width: 320px) and (max-width: 399px){
-.owl-prev,.owl-next{
-	top: 40px;
+	top: 35%;
 }
 }
