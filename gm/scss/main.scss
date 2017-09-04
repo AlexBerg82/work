@@ -1,0 +1,93 @@
+@import "reset";
+@import "clearfix";
+
+body{
+	font-family: "OpenSansRegular", sans-serif;
+	background: #000;
+	font-size: 13px;
+}
+
+@import "fonts";
+
+
+.wrapper{
+	width: 100%;
+	background-color: #F3F3F3;
+}
+
+
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 599px) { @content; }
+  }
+  @else if $media == small-tablets {
+    @media only screen and (min-width: 600px) and (max-width: 767px) { @content; }
+  }  
+  @else if $media == tablets {
+    @media only screen and (min-width: 768px) and (max-width: 979px) { @content; }
+  }
+  @else if $media == display {
+    @media only screen and (min-width: 980px) { @content; }
+  }  
+  @else if $media == display-big {
+    @media only screen and (min-width: 1200px) { @content; }
+  }
+}
+
+
+
+@mixin pod-block-100 {
+		margin: 0 auto; position: relative; box-sizing: content-box;
+		
+			// < 479
+			@include respond-to(handhelds) { width: 100%;  }
+			// 488 > 599
+			@include respond-to(wide-handhelds) { width: 100%;  }
+			// 600 > 767
+			@include respond-to(small-tablets) { width: 100%;  }
+			// 768 > 979
+			@include respond-to(tablets) { width: 100%;  }
+			// 980 > 
+			@include respond-to(display) {max-width:1200px;  }
+      // 1200 > 
+      @include respond-to(display-big) {max-width:1200px;  }
+
+}
+
+
+@mixin respond-menu($resp) {
+  @if $resp == handhelds {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $resp == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 529px) { @content; }
+  }
+  @else if $resp == small-tablets {
+    @media only screen and (min-width: 530px) and (max-width: 591px) { @content; }
+  }  
+  @else if $resp == tablets {
+    @media only screen and (min-width: 592px) and (max-width: 630px) { @content; }
+  }
+  @else if $resp == big-tablets {
+    @media only screen and (min-width: 631px) and (max-width: 767px) { @content; }
+  }
+}
+
+
+
+@import "header";
+
+@import "top_menu";
+
+@import "submenu";
+
+@import "auto";
+
+
+@import "view";
+
+@import "footer";

@@ -1,0 +1,46 @@
+.footer{
+	width: 80%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 20px 0 10px 0;
+	background-color: #F3F3F3;
+	
+	@include respond-to(handhelds){
+		width: 100%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+	}
+	@include respond-to(tablets){
+		width: 100%;
+	}
+}
+.bottom_menu{
+	border-top: 1px solid #E8E8E8;
+}
+.bottom_menu ul{
+	margin-left: 10px;
+}
+.bottom_menu li{
+	float: left;
+	background-color: #F3F3F3;
+	padding: 6px 10px;
+}
+.bottom_menu ul li a{
+	font-size: 11px;
+	color: #9C9C9C;
+}
+.bottom_menu ul li a:hover{
+	color: orange;
+}
+.bottom_menu ul span {
+    float: left;
+    display: block;
+    width: 1px;
+    height: 20px;
+    margin-top: 4px;
+    background-color: rgb(255, 255, 255);
+}

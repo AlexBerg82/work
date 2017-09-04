@@ -1,0 +1,408 @@
+/*big car*/
+.header_unit_big{
+	width: 80%;
+	margin: 1px auto;
+	
+	@include respond-to(handhelds){
+		width: 98%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 98%;
+	}
+	@include respond-to(small-tablets){
+		width: 98%;
+	}
+	@include respond-to(tablets){
+		width: 98%;
+	}
+}
+
+.header_unit_big img{
+	width: 100%;
+}
+
+/*fix title*/
+.menu_unit_big{
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+	
+	@include respond-to(handhelds){
+		width: 100%;
+		left: 0;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+		left: 0;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+		left: 0;
+	}
+	@include respond-to(tablets){
+		width: 100%;
+		left: 0;
+	}
+}
+.menu_unit_big li{
+	float: left;
+	position: relative;
+	z-index: 100;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		float: none;
+	}
+	@include respond-menu(small-tablets){
+		float: none;
+	}
+	@include respond-menu(tablets){
+		float: none;
+	}
+}
+.menu_unit_big li:first-child{
+	background: linear-gradient(to top, #CFCFCF, #fff);
+}
+.menu_unit_big span {
+	float: left;
+	display: block;
+	width: 1px;
+	height: 40px;
+	margin-top: 5px;
+	background-color: #fff;
+	
+	@include respond-menu(handhelds){
+		float: none;
+		display: none;
+	}
+	@include respond-menu(wide-handhelds){
+		float: none;
+		display: none;
+	}
+	@include respond-menu(small-tablets){
+		float: none;
+		display: none;
+	}
+	@include respond-menu(tablets){
+		float: none;
+		display: none;
+	}
+}
+.menu_unit_big li:first-child{
+	margin-left: 0;
+}
+.menu_unit_big li:hover{
+	background-color: #CFCFCF;
+}
+.menu_unit_big li a{
+	display: block;
+	padding: 10px 13px;
+	line-height: 32px;
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 14px;
+	color: #696969;
+	
+	@include respond-menu(handhelds){
+		padding: 10px 13px;
+		font-size: 14px;
+	}
+	@include respond-menu(wide-handhelds){
+		padding: 10px 13px;
+		font-size: 14px;
+	}
+	@include respond-menu(big-tablets){
+		padding: 4px;
+		font-size: 12px;
+	}
+	@include respond-to(tablets){
+		padding: 8px;
+	}
+}
+.menu_unit_big li:hover > a{
+	color: #000;
+}
+
+/*extra of model*/
+.content_unit_big{
+	width: 80%;
+	margin: 0 auto;
+	
+	@include respond-to(handhelds){
+		width: 98%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 98%;
+	}
+	@include respond-to(small-tablets){
+		width: 98%;
+	}
+	@include respond-to(tablets){
+		width: 98%;
+	}
+}
+.content_unit_big h2{
+	padding: 20px 0;
+	border-bottom: 1px solid #aaa;
+}
+.unit_big_info{
+	margin: 30px auto;
+
+	@include respond-to(handhelds){
+		padding-bottom: 15px;
+		border-bottom: 1px solid #aaa;
+	}
+	@include respond-to(wide-handhelds){
+		padding-bottom: 15px;
+		border-bottom: 1px solid #aaa;
+	}
+	@include respond-to(small-tablets){
+		padding-bottom: 15px;
+		border-bottom: 1px solid #aaa;
+	}
+	@include respond-to(tablets){
+
+	}
+}
+.unit_big_info:nth-child(2) img,.unit_big_info:nth-child(4) img{
+	float: left;
+	
+	@include respond-to(handhelds){
+		margin-bottom: 15px;
+	}
+	@include respond-to(wide-handhelds){
+		margin-bottom: 15px;
+	}
+	@include respond-to(small-tablets){
+		margin-bottom: 15px;
+	}
+}
+.unit_big_info img{
+	width: 60%;
+	
+	@include respond-to(handhelds){
+		width: 100%;
+		float: none;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+		float: none;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+		float: none;
+	}
+	@include respond-to(tablets){
+		width: 50%;
+	}
+}
+.unit_big_info .view_option{
+	width: 40%;
+	float: left;
+	padding: 0 20px;
+	width:calc(40% - 40px); 
+	
+	@include respond-to(handhelds){
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+	@include respond-to(tablets){
+		width: 50%;
+		float: left;
+		padding: 0 20px;
+		width:calc(50% - 40px);
+	}
+}
+.unit_big_info .view_option h1{
+	@include respond-to(handhelds){
+		margin-top: 15px;
+	}
+	@include respond-to(wide-handhelds){
+		margin-top: 15px;
+	}
+	@include respond-to(small-tablets){
+		margin-top: 15px;
+	}
+}
+.unit_big_info .view_option p{
+	margin-top: 15px;
+	font-size: 13px;
+	line-height: 20px;
+	text-align: justify;
+}
+
+/*options*/
+.extra{
+	width: 80%;
+	margin: 0 auto;
+	
+	@include respond-to(handhelds){
+		width: 98%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 98%;
+	}
+	@include respond-to(small-tablets){
+		width: 98%;
+	}
+	@include respond-to(tablets){
+		width: 98%;
+	}
+}
+.unit_extra{
+	width: 31.3%;
+	margin: 10px 1%;
+	float: left;
+	
+	@include respond-to(handhelds){
+		width: 98%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 98%;
+	}
+	@include respond-menu(big-tablets){
+		width: 48%;
+		height: 220px;
+	}
+}
+.unit_extra img{
+	width: 100%;
+	box-shadow: rgba(156,156,156,0.6) 0px 0px 10px;
+	
+	@include respond-to(wide-handhelds){
+		width: 98%;
+		border: 1px solid #aaa;
+		padding: 2px;
+	}
+}
+.unit_extra span{
+	font-size: 8px;
+	color: red;
+}
+
+/*interjer and view*/
+.front{
+	width: 80%;
+	margin: 0 auto;
+	
+	@include respond-to(handhelds){
+		width: 98%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 98%;
+	}
+	@include respond-to(small-tablets){
+		width: 98%;
+	}
+	@include respond-to(tablets){
+		width: 98%;
+	}
+}
+.front h2{
+	padding: 20px 0;
+	border-bottom: 1px solid #aaa;
+	margin-bottom: 20px;
+}
+.wrapper_front{
+	width: 100%;
+}
+ul.tabs_front{
+	height: 25px;
+	line-height: 25px;
+	margin: 0 0 3px;
+	list-style: none;
+}
+ul.tabs_front li {
+	float: left;
+	margin-right: 1px;
+	cursor: pointer;
+}
+ul.tabs_front li a {
+	display: block;
+	padding: 0 13px 1px;
+	margin-bottom: -1px;
+	color: #444;
+	text-decoration: none;
+	cursor: pointer;
+	background: #F9F9F9;
+	border: 1px solid #EFEFEF;
+	border-bottom: 1px solid #F9F9F9;
+	
+	@include respond-to(handhelds){
+		padding: 0 3px;
+		font-size: 11px;
+	}
+	@include respond-to(wide-handhelds){
+		padding: 0 3px;
+		font-size: 11px;
+	}
+}
+ul.tabs_front li a:hover {
+	color: #F70;
+	padding: 0 13px;
+	background: #FFFFDF;
+	border: 1px solid #FFCA95;
+	
+	@include respond-to(handhelds){
+		padding: 0 3px;
+	}
+	@include respond-to(wide-handhelds){
+		padding: 0 3px;
+	}
+}
+ul.tabs_front li.tab_active_front a {
+	color: #444;
+	background: #EFEFEF;
+	padding: 0px 13px 2px;
+	border: 1px solid #DDD;
+	border-bottom: 1px solid #EFEFEF;
+	
+	@include respond-to(handhelds){
+		padding: 0 3px 2px;
+	}
+	@include respond-to(wide-handhelds){
+		padding: 0 3px 2px;
+	}
+}
+.wrapper_front div#t2,
+.wrapper_front div#t3{
+	display: none;
+}
+.wrapper_front div#t1,
+.wrapper_front div#t2,
+.wrapper_front div#t3{
+	border: 1px solid #DDD;
+	background: #EFEFEF;
+	padding: 10px 12px;
+}
+.wrapper_front div#t2 table,
+.wrapper_front div#t3 table{
+	border: 1px solid #fff;
+}
+
+/*tables*/
+#t2 table,#t3 table{
+	font-size: 12px;
+}
+#t2 > div,#t3 > div{
+	@include respond-to(handhelds){
+		max-width: 479px;
+		overflow-y: scroll;
+	}
+}
+.marker{
+	text-align: center;
+}

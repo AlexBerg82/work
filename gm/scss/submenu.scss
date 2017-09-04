@@ -1,0 +1,93 @@
+.wrapper_car{
+	width: 555px;
+	
+	@include respond-menu(tablets){
+		width: 505px;
+	}
+}
+.wrapper_car ul.tabs{
+	line-height: 25px;
+	width: 160px;
+	float: left;
+	
+	@include respond-menu(tablets){
+		width: 110px;
+	}
+}
+.wrapper_car > div{
+	float: left;
+}
+.tabs li{
+	cursor: pointer;
+	display: block;
+	padding: 8px;
+	position: relative;
+	background: linear-gradient(to top, #E8E8E8, #fff);
+	z-index: 10;
+}
+.tabs li span{
+	color: #E8E8E8;
+	position: absolute;
+	top: 7px;
+	right: -11px;
+	display: none;
+}
+.menu .tabs > span {
+	float: left;
+	display: block;
+	width: 1px;
+	height: 20px;
+	margin-top: 3px;
+	background-color: #fff;
+}
+.tabs .tab_active > span{
+	display: block;
+}
+.tabs li a {
+	color: #aaa;
+	cursor: pointer;
+}
+.tabs li.tab_active a{
+	color: #F70;
+}
+div#t2,
+div#t3{
+	display: none;
+}
+.wrapper_car div#t1,
+.wrapper_car div#t2,
+.wrapper_car div#t3{
+	background: #F3F3F3;
+	padding: 20px;
+	width:354px;
+}
+.grade{
+	float: left;
+	margin: 1px;
+	box-shadow: rgba(221,221,221,0.7) 0px 0px 7px;
+}
+.grade:hover{
+	box-shadow: rgba(156,156,156,0.7) 0px 0px 7px;
+}
+.wrapper_car div img{
+	height: 100px;
+	width: 175px;
+	margin-top: 10px;
+}
+div#t1 a,
+div#t2 a,
+div#t3 a{
+	color: #4F4F4F;
+	font-size: 12px;
+}
+div#t1 a:hover,
+div#t2 a:hover,
+div#t3 a:hover{
+	color: orange;
+}
+.title h2{
+	color: #CD2626;
+}
+.title{
+	margin: 10px;
+}

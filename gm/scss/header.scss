@@ -1,0 +1,224 @@
+.header{
+	width: 80%;
+	max-width: 1440px;
+	position: relative;
+	margin: 0 auto;
+	background-color: #F3F3F3;
+	
+	@include respond-to(handhelds){
+		width: 100%;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+	}
+	@include respond-to(tablets){
+		width: 100%;
+	}
+}
+.logo{
+	width: 220px;
+	float: left;
+	
+	img{
+		max-width: 100%;
+	}
+
+	@include respond-to(handhelds){
+		width: 100%;
+		float: none;
+	}
+	@include respond-to(wide-handhelds){
+		max-width: 220px;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(small-tablets){
+		max-width: 220px;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(tablets){
+		max-width: 220px;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+}
+.language_search{
+	width: 280px;
+	float: right;
+	padding: 13px 0;
+
+	@include respond-to(handhelds){
+		width: 100%;
+		float: none;
+	}
+	@include respond-to(wide-handhelds){
+		max-width: 160px;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(small-tablets){
+		max-width: 160px;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(tablets){
+		margin:10px;
+	}
+}
+.language_menu{
+	@include respond-to(handhelds){
+		display: none;
+	}
+	@include respond-to(wide-handhelds){
+		display: none;
+	}
+	@include respond-to(small-tablets){
+		display: none;
+	}
+}
+.search{
+	width: 150px;
+	position: relative;
+	float: right;
+	
+	@include respond-to(handhelds){
+		width: 80%;
+		margin: 0 auto;
+		float: none;
+	}
+}
+.wrap_search{
+	border: 1px solid #B5B5B5;
+	background-color: #fff;
+	border-radius: 3px;
+	-wedkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+}
+.search_input{
+	margin: 0 auto;
+	width: 83%;
+	padding: 3px 0px 3px 5px;
+	border: none;
+	background-color: #fff;
+	border-radius: 3px;
+	-wedkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	outline: none;
+
+	@include respond-to(handhelds){
+		width: 90%;
+		padding: 7px 0px 7px 5px;
+	}
+}
+.search_input::-moz-placeholder{
+	color: #CFCFCF;
+}
+.search_input::-webkit-input-placeholder{
+	color: #CFCFCF;
+}
+.search_input:-moz-placeholder{
+	color: #CFCFCF;
+}
+.search_input:-ms-input-placeholder{
+	color: #CFCFCF;
+}
+.search_input:focus::-webkit-input-placeholder{
+	color: transparent;
+}
+.search_input:focus::-moz-placeholder{
+	color: transparent;
+}
+.search_input:focus:-moz-placeholder{
+	color: transparent;
+}
+.search_input:focus:-ms-input-placeholder{
+	color: transparent;
+}
+.btn_search{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 2px;
+	right: 2px;
+	background: url(../img/search.png) no-repeat;
+	background-size: cover;
+	cursor: pointer;
+
+	@include respond-to(handhelds){
+		width: 30px;
+		height: 30px;
+		top: 1px;
+		right: 5px;
+	}
+}
+ul.language_menu > li{
+	float: left;
+	position: relative;
+	border: 1px solid #F3F3F3;
+}
+ul.language_menu > li > a {
+	padding: 4px 10px;
+	display: block;
+	width: 100px;
+	color: #000;
+	text-align: center;
+}
+ul.language_menu > li > a:hover{
+	background-color: #fff;
+}
+ul.language_menu > li > a img{
+	width: 17px;
+	height: 17px;
+	float: left;
+	position: absolute;
+	left: 5px;
+	top: 3px;
+}
+ul.language_menu > li > a span{
+	float: right;
+	font-size: 10px;
+	line-height: 18px;
+	color: #aaa;
+	position: absolute;
+	right: 5px;
+	top: 3px;
+}
+ul.language_submenu{
+	display: none;
+	position: absolute;
+	width: 120px;
+	top: 22px;
+	left: -1px;
+	background-color: white;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+	z-index: 99;
+}
+ul.language_submenu > li{
+	display: block;
+}
+ul.language_submenu > li > a{
+	display: block;
+	padding: 5px 10px;
+	color: #000;
+	text-align: center;
+}
+ul.language_menu > li:hover > ul.language_submenu{
+	display: block;
+}
+ul.language_menu > li > a:hover, ul.language_submenu > li > a:hover{
+	color: orange;
+}
+ul.language_menu > li:hover{
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	border-top: 1px solid #aaa;
+	background-color: white;
+}

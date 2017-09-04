@@ -1,0 +1,242 @@
+.top_menu{
+	width: 80%;
+	max-width: 1440px;
+	z-index: 1000;
+	margin: 0 auto;
+	background-color: #F3F3F3;
+	
+	@include respond-to(handhelds){
+		width: 100%;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(wide-handhelds){
+		width: 100%;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(small-tablets){
+		width: 100%;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+	@include respond-to(tablets){
+		width: 100%;
+		width:calc(100% - 20px); 
+		margin:10px;
+	}
+}
+.menu{
+	background-color: #F3F3F3;
+	float: right;
+	z-index: 2000;
+	padding-bottom: 1px;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+}
+.top_menu .menu .menu_list{
+ 	display: block;
+	float: right;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+}
+.top_menu .menu .menu_list > li{
+	float: left; 
+	position: relative;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+}
+.menu .menu_list > span{
+    float: left;
+    display: block;
+    width: 1px;
+    height: 15px;
+    margin-top: 6px;
+    background-color: rgb(255, 255, 255);
+	
+	@include respond-menu(handhelds){
+		display: none;
+	}
+}
+.top_menu .menu .menu_list > li#sub2:hover a + div,
+.top_menu .menu .menu_list > li#sub3:hover a + div,
+.top_menu .menu .menu_list > li#sub4:hover a + div,
+.top_menu .menu .menu_list > li#sub6:hover a + div,
+.top_menu .menu .menu_list > li#sub8:hover a + div{
+	display: block;
+
+	@include respond-menu(handhelds){
+		display: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: none;
+	}
+	@include respond-menu(small-tablets){
+		display: none;
+	}
+}
+#sub9,#sub10,#sub11,#sub12{
+	display: none;
+}
+#sub9 > div{
+	margin-left: -66px;
+	color:red;
+}
+#sub9 > a > div{
+	font-weight: 800;
+}
+#sub2 > div{
+	margin-left: -30px;
+	
+	@include respond-menu(tablets){
+		margin-left: 0;
+	}
+}
+.top_menu .menu .menu_list > li:hover{
+	background-color: rgba(232,232,232,1);
+}
+.top_menu .menu .menu_list > li > div{
+	background-color: #CFCFCF;
+	box-shadow: rgba(156,156,156,0.7) 0px 2px 7px;
+	position: absolute;
+	z-index: 2000;
+	display: none;
+}
+.top_menu .menu .menu_list > li:hover a + div {
+	display: block;
+	
+	@include respond-menu(handhelds){
+		display: none;
+	}
+}
+.top_menu .menu .menu_list > li a + div > ul > li > a {
+	color: rgba(255,255,255,.9);
+	display: block;
+	padding: 5px 27px;
+}
+.top_menu .menu .menu_list > li a + div > ul > li:hover > a{
+	background-color: rgba(0,0,0,0.15);	
+}
+.top_menu .menu .menu_list > li > a{
+	display: inline-block;
+	font-weight: 200;
+	padding: 5px 10px;
+	text-decoration: none;
+	transition: all linear 0.1s;
+	font-size: 12px;
+	color: #4F4F4F;
+	border-bottom: 2px solid #F3F3F3;
+	
+	@include respond-menu(handhelds){
+		display: block;
+		padding: 8px 10px;
+		border: none;
+	}
+	@include respond-menu(tablets){
+		padding: 8px 9px;
+	}
+}
+.top_menu .menu .menu_list > li > a:hover{
+	color: orange;
+	border-bottom: 2px solid rgba(232,232,232,1);
+	
+	@include respond-menu(handhelds){
+		border: none;
+	}
+}
+.top_menu .menu .menu_list .active > a{
+	border-bottom: 2px solid red;
+	
+	@include respond-menu(handhelds){
+		border: none;
+	}
+}
+#sub3,#sub3 + span{
+	display: block;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: none;
+	}
+	@include respond-menu(small-tablets){
+		display: none;
+	}
+	@include respond-menu(tablets){
+		display: none;
+	}
+}
+#sub9,#sub10{
+	display: none;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: block;
+	}
+	@include respond-menu(small-tablets){
+		display: block;
+	}
+	@include respond-menu(tablets){
+		display: block;
+	}
+}
+#sub5,#sub5 + span{
+	display: block;
+
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: none;
+	}
+	@include respond-menu(small-tablets){
+		display: none;
+	}
+}
+#sub11{
+	display: none;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: block;
+	}
+	@include respond-menu(small-tablets){
+		display: block;
+	}
+}
+#sub7,#sub7 + span{
+	display: block;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: none;
+	}
+}
+#sub12{
+	display: none;
+	
+	@include respond-menu(handhelds){
+		float: none;
+	}
+	@include respond-menu(wide-handhelds){
+		display: block;
+	}
+}
+#sub1 + span, #sub2 + span, #sub3 + span, #sub4 + span, #sub5 + span, #sub6 + span, #sub7 + span{
+	@include respond-menu(handhelds){
+		display: none;
+	}
+}

@@ -1,0 +1,913 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GW</title>
+	<link href="css/main.css" type="text/css" rel="stylesheet" />
+	<link href="general_slider/style.css" type="text/css" rel="stylesheet" />
+	<link href="fotorama/fotorama.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+	<script src="fotorama/fotorama.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+			$("#anchors").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+
+<div class="header clearfix">
+	<div class="logo">
+		<a href="http://www.gwm-global.com"><img src="img/logo-gw-sm.png"></a>
+	</div>
+	
+	<div class="language_search clearfix">
+		<ul class="language_menu">
+			<li><a href="#"><img src="img/earth.png" alt="x">Russia<span>&#9660;</span></a>
+				<ul class="language_submenu">
+					<li><a href="#">Espanol</a></li>
+					<li><a href="#">English</a></li>
+					<li><a href="#">Japan</a></li>
+				</ul>
+			</li>
+		</ul>
+
+		<div class="search clearfix">
+			<div class="wrap_search clearfix">
+				<input type="text" class="search_input" id="search_input" placeholder="Great Wall C50">
+				<a href="#" class="btn_search" id="btn_search"></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="top_menu clearfix" id="top_menu">
+
+	<div class="menu">
+		<ul class="menu_list">
+			<li id="sub1"><a href="index.html"><div>Главная</div></a></li><span></span>
+			<li class="active" id="sub2"><a href="auto.html"><div>Автомобили</div></a>
+				<div>
+					<div class="wrapper_car clearfix">
+						<ul class="tabs first_tab">
+							<li class="t1 tab_active"><a href="#">Легковые</a><span>&#9658;</span></li>
+							<li class="t2"><a>Кроссоверы</a><span>&#9658;</span></li>
+							<li class="t3"><a>Внедорожники</a><span>&#9658;</span></li>
+						</ul>
+
+						<div class="clearfix">
+							<div id="t1" class="clearfix">
+							
+								<div class="grade clearfix">
+									<div class="title">
+										<h2>Great Wall C30</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/light/C30-3.png" alt="x"></a>
+								</div>
+								
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall C50R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/light/C50-3.png" alt="x"></a>
+								</div>
+								
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall C20R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/light/C20R-3.png" alt="x"></a>
+								</div>
+								
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall C30</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/light/C30-4.png" alt="x"></a>
+								</div>
+							</div>
+							
+							<div id="t2" class="clearfix">
+								<div class="grade clearfix">
+									<div class="title">
+										<h2>Great Wall K50</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/cross/k50-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall K50R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/cross/k50r-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall K20R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/cross/k20r-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall K30</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/cross/k30-3.png" alt="x"></a>
+								</div>
+							</div>
+
+							<div id="t3" class="clearfix">
+								<div class="grade clearfix">
+									<div class="title">
+										<h2>Great Wall U50R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/undgrnd/C50r-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall U50</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/undgrnd/C50-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall U30</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/undgrnd/C30-3.png" alt="x"></a>
+								</div>
+								<div class="grade">
+									<div class="title">
+										<h2>Great Wall U20R</h2>
+										<a href="#">Характеристики</a>
+									</div>
+									<a href="#"><img src="images/car/undgrnd/C20r-3.png" alt="x"></a>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</li><span></span>
+			<li id="sub3"><a href="#"><div>Услуги</div></a>
+				<div>
+
+				</div>
+			</li><span></span>
+			<li id="sub4"><a href="#"><div>Дилеры</div></a>
+				<div>
+
+				</div>
+			</li><span></span>
+			<li id="sub5"><a href="#"><div>Сервис</div></a></li><span></span>
+			<li id="sub6"><a href="#"><div>Заказать онлайн</div></a>
+				<div>
+					<ul>
+						<li><a href="#">Me</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Web Development</a></li>
+					</ul>
+				</div>
+			</li><span></span>
+			<li id="sub7"><a href="#"><div>Форум</div></a></li><span></span>
+			<li id="sub8"><a href="#"><div>Контакты</div></a>
+				<div>
+					<ul>
+						<li><a href="#">Me</a></li>
+						<li><a href="#">Gaming</a></li>
+						<li><a href="#">Sport</a></li>
+						<li><a href="#">Web Design</a></li>
+						<li><a href="#">Web Development</a></li>
+					</ul>
+				</div>
+			</li>
+			<li id="sub9"><a href="#"><div>...</div></a>
+				<div>
+					<ul class="hide_menu">
+						<li id="sub10"><a href="#"><div>Услуги</div></a></li>
+						<li id="sub11"><a href="#"><div>Сервис</div></a></li>
+						<li id="sub12"><a href="#"><div>Форум</div></a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div class="wrapper_big">
+	<div class="head_content clearfix">
+		<ul class="path">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="auto.html">Легковые автомобили</a></li>
+			<li class="place"><a href="#">Great Wall C50</a></li>
+		</ul>
+	</div>
+	
+	<div class="header_unit_big">
+		<img src="images/car_big/c50.jpg" alt="x">
+	</div>
+	
+	<div class="wrapper_unit_big">
+		<ul class="menu_unit_big clearfix" id="anchors">
+			<li><a class="anchor" href="#top_menu">Great Wall C50</a></li>
+			<li><a class="anchor" href="#content_unit_big">Преимущества модели</a></li><span></span>
+			<li><a class="anchor" href="#front">Внешний вид, Интерьер, Параметры и конфигурация</a></li><span></span>
+			<li><a class="anchor" href="#general_slider">Галерея</a></li>
+		</ul>
+	</div>
+	
+	<div class="content_unit_big" id="content_unit_big">
+		<h2>Преимущества модели</h2>
+		<div class="unit_big_info clearfix">
+			<img src="images/car_big/h1.jpg" alt="x">
+			<div class="view_option">
+				<h1>Двигатель с турбонаддувом</h1>
+				<p>Постоянное стремление потенциальных потребителей к скорости, воодушевило нас на разработку двигателя повышенной мощности. Great Wall C50 оборудованным двигателем 1.5T с турбонаддувом, он был разработан с применением технологии изменяемой фазы газораспределения (VVT), многоточечным бензиновым впрыском с электронным управлением, что увеличило мощность на 30% - 40% по сравнению с атмосферным двигателем. Мощность двигателя составляет 98кВт., крутящий момент – 188Н.м</p>
+			</div>
+		</div>
+		<div class="unit_big_info clearfix">
+			<img src="images/car_big/h2.jpg" alt="x">
+			<div class="view_option">
+				<h1>Двигатель с турбонаддувом</h1>
+				<p>Задача остается задачей: как идеально совместить дизайн интерьера салона с его практичным использованием? Компании «Great Wall Motor» удалось успешно решить эту задачу. Как профессиональный автомобильный производитель, Great Wall Motor постоянно работает над повышением качества выпускаемой продукции, подбирая новые варианты интерьера автомобилей в целях повышения комфорта, предоставляя возможность владельцу, получить удовольствие от вождения Great Wall C50.</p>
+			</div>
+		</div>
+		<div class="unit_big_info clearfix">
+			<img src="images/car_big/h3.jpg" alt="x">
+			<div class="view_option">
+				<h1>Активная и пассивная безопасность</h1>
+				<p>1.Закрытый клеточный Каркас кузова высокой жесткости - представляет собой клетку безопасности в салоне, сложный по конструкции каркас, который связан с силовой структурой кузова автомобиля, что в максимальной мере обеспечивает безопасность водителя и пассажиров. 2.Функция контроля давления в шинах своевременно отслеживает изменение давления в шинах, что обусловливает стабильность движения автомобиля. 3.Фронтальные подушки безопасности и боковые подушки безопасности. Ряд современных технологий активной безопасности, 6 подушек безопасности и боковые надувные «шторки» безопасности – всё это обеспечивает оптимальную безопасность для водителя и пассажиров. 4.Двигатель оборудован электронной противоугонной системой, запуск автомобиля выполняется только при наличии оригинального ключа.</p>
+			</div>
+		</div>
+		<div class="unit_big_info clearfix">
+			<img src="images/car_big/h4.jpg" alt="x">
+			<div class="view_option">
+				<h1>Передовые технологии</h1>
+				<p>1.Открыв электрический люк нажатием одной кнопки, у вас появится возможность, насладится окрестными пейзажами. 2.Магнитола AUX с USB портами, аудиосистема с 6-ю динамиками и эффектом объемного звучания, создадут у вас радостное настроение во время пути. 3.Приборная панель, по Вашему желанию предоставит Вам всю необходимую информацию, среднюю скорость в пути, число оборотов, расход топлива. 4.В системе автоматического управления автомобилем было интегрировано управление руля и функция управления музыкой, которые теперь запускаются нажатием одной кнопки.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="extra clearfix">
+		<div class="unit_extra"><img src="images/extra/01.jpg" alt="x"><p><span>&#9658;</span> Контроль давления в шинах (TPMS)</p></div>
+		<div class="unit_extra"><img src="images/extra/02.jpg" alt="x"><p><span>&#9658;</span> Электронная система стабилизации курсовой устойчивости</p></div>
+		<div class="unit_extra"><img src="images/extra/03.jpg" alt="x"><p><span>&#9658;</span> Закрытый «клеточный» Каркас кузова высокой жесткости</p></div>
+		<div class="unit_extra"><img src="images/extra/04.jpg" alt="x"><p><span>&#9658;</span> Сертификат NCAP – Пять звезд</p></div>
+		<div class="unit_extra"><img src="images/extra/05.jpg" alt="x"><p><span>&#9658;</span> GPS +MP5</p></div>
+		<div class="unit_extra"><img src="images/extra/06.jpg" alt="x"><p><span>&#9658;</span> Бортовой компьютер</p></div>
+	</div>
+	
+	<div class="front" id="front">
+		<h2>Внешний вид, Интерьер, Параметры и Конфигурация</h2>
+		<div class="wrapper_front">
+			<ul class="tabs_front first_tab_front">
+				<li class="t1_front tab_active_front"><a>Интерьер и внешний вид</a></li>
+				<li class="t2_front"><a>Параметры</a></li>
+				<li class="t3_front"><a>Конфигурация</a></li>
+			</ul>
+
+			<div id="t1">
+				<!-- Слайдер -->
+				<div class="cd-slider-wrapper">
+					<ul class="cd-slider" data-step1="M1402,800h-2V0h1c0.6,0,1,0.4,1,1V800z" data-step2="M1400,800H379L771.2,0H1399c0.6,0,1,0.4,1,1V800z" data-step3="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z" data-step4="M-2,800h2V0h-1c-0.6,0-1,0.4-1,1V800z" data-step5="M0,800h1021L628.8,0L1,0C0.4,0,0,0.4,0,1L0,800z" data-step6="M0,800h1400V0L1,0C0.4,0,0,0.4,0,1L0,800z">
+						<li class="visible">
+							<div class="cd-svg-wrapper">
+								<svg viewBox="0 0 1400 800">
+									<title>Aimated SVG</title>
+									<defs>
+										<clipPath id="cd-image-1">
+											<path id="cd-changing-path-1" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+										</clipPath>
+									</defs>
+									
+									<image height='800px' width="1400px" clip-path="url(#cd-image-1)" xlink:href="images/slid/01.jpg"></image>
+								</svg>
+							</div> <!-- .cd-svg-wrapper -->
+						</li>
+
+						<li>
+							<div class="cd-svg-wrapper">
+								<svg viewBox="0 0 1400 800">
+									<title>Aimated SVG</title>
+									<defs>
+										<clipPath id="cd-image-2">
+											<path id="cd-changing-path-2" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+										</clipPath>
+									</defs>
+									
+									<image height='800px' width="1400px" clip-path="url(#cd-image-2)" xlink:href="images/slid/02.jpg"></image>
+								</svg>
+							</div> <!-- .cd-svg-wrapper -->
+						</li>
+
+						<li>
+							<div class="cd-svg-wrapper">
+								<svg viewBox="0 0 1400 800">
+									<title>Aimated SVG</title>
+									<defs>
+										<clipPath id="cd-image-3">
+											<path id="cd-changing-path-3" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+										</clipPath>
+									</defs>
+									
+									<image height='800px' width="1400px" clip-path="url(#cd-image-3)" xlink:href="images/slid/03.jpg"></image>
+								</svg>
+							</div> <!-- .cd-svg-wrapper -->
+						</li>
+
+						<li>
+							<div class="cd-svg-wrapper">
+								<svg viewBox="0 0 1400 800">
+									<title>Aimated SVG</title>
+									<defs>
+										<clipPath id="cd-image-4">
+											<path id="cd-changing-path-4" d="M1400,800H0V0h1399c0.6,0,1,0.4,1,1V800z"/>
+										</clipPath>
+									</defs>
+									
+									<image height='800px' width="1400px" clip-path="url(#cd-image-4)" xlink:href="images/slid/04.jpg"></image>
+								</svg>
+							</div> <!-- .cd-svg-wrapper -->
+						</li>
+						
+					</ul> <!-- .cd-slider -->
+
+					<ul class="cd-slider-navigation">
+						<li><a href="#0" class="next-slide">Next</a></li>
+						<li><a href="#0" class="prev-slide">Prev</a></li>
+					</ul> <!-- .cd-slider-navigation -->
+
+					<ol class="cd-slider-controls">
+						<li class="selected"><a href="#0"><em>Item 1</em></a></li>
+						<li><a href="#0"><em>Item 2</em></a></li>
+						<li><a href="#0"><em>Item 3</em></a></li>
+						<li><a href="#0"><em>Item 4</em></a></li>
+					</ol> <!-- .cd-slider-controls -->
+				</div> <!-- .cd-slider-wrapper -->
+			</div>
+			
+			<div id="t2">
+				<h4>Технические параметры Great Wall C50</h4>
+				<div>
+					<table border="1">
+						<tr>
+							<td colspan="2">Двигатель</td>
+							<td>1.5T</td>
+						</tr>
+						<tr>
+							<td rowspan="6">Габариты/Масса/Трансмиссия</td>
+							<td>Длина ×Ширина ×Высота (мм)</td>
+							<td>4650×1775×1455</td>
+						</tr>
+						<tr>
+							<td>Колесная база (мм)</td>
+							<td>2700</td>
+						</tr>
+						<tr>
+							<td>Снаряженная масса (кг)</td>
+							<td>1255</td>
+						</tr>
+						<tr>
+							<td>Дорожный просвет (мм)</td>
+							<td>120</td>
+						</tr>
+						<tr>
+							<td>Тип трансмиссии</td>
+							<td>5MT</td>
+						</tr>
+						<tr>
+							<td>Размер шин</td>
+							<td>205/55R16 91V</td>
+						</tr>
+						<tr>
+							<td rowspan="5">Двигатель</td>
+							<td>Тип двигателя</td>
+							<td>Рядный четырехцилиндровый с водяным охлаждением, четырехтактный, двухвальный с электрической дроссельной заслонкой, изменяемой фазой газораспределения (VVT), многоточечный бензиновый впрыск с электронным управлением.</td>
+						</tr>
+						<tr>
+							<td>Объем двигателя (см. куб.)</td>
+							<td>1497</td>
+						</tr>
+						<tr>
+							<td>Мощность, кВт/ (об/мин)</td>
+							<td>98/5600</td>
+						</tr>
+						<tr>
+							<td>Крутящий момент,Нм/(об/мин)</td>
+							<td>188/2000~4500</td>
+						</tr>
+						<tr>
+							<td>Экологический стандарт</td>
+							<td>Евро-IV</td>
+						</tr>
+						<tr>
+							<td rowspan="2">Шасси</td>
+							<td>Тормозная система</td>
+							<td>Дисковые на все колеса</td>
+						</tr>
+						<tr>
+							<td>Подвеска (передняя/задняя)</td>
+							<td>Независимая передняя подвеска типа MacPhersan и независимая задняя подвеска на двойных поперечных рычагах</td>
+						</tr>
+						<tr>
+							<td colspan="3" style="text-align:left; font-size:10px; padding-top:10px; padding-bottom:10px; padding-left:20px;">Завод-изготовитель оставляет за собой право внесения частичных изменений комплектации и технических характеристик автомобиля, для получения подробной информации обращайтесь к уполномоченным дилерам.</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+			<div id="t3">
+				<h4>Таблица комплектации модели GWM C50 левое/правое расположение руля</h4>
+				<div>
+					<table border="1">
+						<tr>
+							<td colspan="6" align="left" valign="top" style="text-align:center; padding-top:5px; padding-bottom:5px; font-size:13px; font-weight:600;">Таблица комплектации модели GWM C50 левое/правое расположение руля</td>
+						</tr>
+						<tr>
+							<td colspan="2"> </td>
+							<td>Обозначение Модели</td>
+							<td colspan="3">CC7150QE09</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<td rowspan="2">Комплектация</td>
+							<td colspan="3">2х-приводной</td>
+						</tr>
+						<tr>
+							<td>роскошь</td>
+							<td>элитная версия</td>
+							<td>люкс</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="4">Рулевое управление, тормозная система</td>
+							<td>Дисковые тормоза на переднии и заднии колеса</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Регулируемая рулевая колонка по высоте</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>205/55 R16</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Полноразмерная запасная шина</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="4">Ⅱ. Внешние опции</td>
+							<td>16 дюймовые литые колесные диски</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Бескаркасный стеклоочиститель </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Хромированная кинематическая двойная выхлопная труба</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Специальный знак, обозначающий силовой агрегат 1,5Т</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="11">Ⅲ. Внутренние опции</td>
+							<td>Встречающийся порог из нержавеющей стали</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Яркость приборной доски регулируема</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Бортовой компьютер</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Кожаный руль</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Кнопки и клавиши руля управления</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Электрические окна с четырьмя дверями</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Электрические стеклоподъемник с функцией предотвратить заклинивания на водительской двери</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция крейсерского управления</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Центральный замок дистанционного управления</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция автоматической разблокировки при парковке</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция автоматического предотвращения ошибочной блокировки дверей</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="5">Ⅳ. Дизайн и опции салона</td>
+							<td>Кожное сидение</td>
+							<td class="marker">×</td>
+							<td class="marker">○</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Электроподогрев передних сидений</td>
+							<td class="marker">×</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td>Ручная регулировка водительского сиденья в 6-ти направлениях.</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Ручная регулировка водительского сиденья в 4-х направлениях.</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>С центральным подлокотником (в пропорции раскладывания 6:4)</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="13">V Активная/пассивная безопасность</td>
+							<td>Фронтальные подушки безопасности</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Подушки безопасности на боковых сторонах и</td>
+							<td class="marker">×</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td>Воздушные занавесы на боковых сторонах</td>
+							<td class="marker">×</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td>ABS+EBD</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Дисплей парковочного радара</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Ремни безопасности с преднатяжителем</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Ремни безопасности с тремя точечными креплениями </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Устройство для крепления детского кресла</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>«Детская» блокировка задних дверей</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция автоматической разблокировки после столкновения</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Система контролирования давления шин</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td class="marker">ESP</td>
+							<td class="marker">×</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td>Огнетушитель 0,5 кг</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="8">Ⅵ. Противоугонные устройства</td>
+							<td>Иммобилайзер автомобиля</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Интеллектуальная противоугонная сигнализационная система </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Автоматическая блокировка дверей после нажатия центрального замка </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Автоматическая блокировка в движении</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Ⅶ. Мультимедиа</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr>
+							<td>Плейер для одного диска DVD+USB</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>2 высокочастотные + 4 низкочастотные динамика</td>
+							<td class="marker">t</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Система переговоров блютуса без проводов</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="4">Ⅷ. Стекло/ зеркало заднего обзора</td>
+							<td>Механическое раскладывающееся зеркало заднего обзора, без размораживания стекол, с фарой и функцией регулировать цвета форы по цвету кузова/фара для прохожих</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Люк</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Внутреннее зерколо заднего вида с механической регулировкой</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>защита от обмерзания горячей линией</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td colspan="2" rowspan="7">Ⅸ. Светотехника</td>
+							<td>Передние противотуманные фары</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Задняя противотуманная фара</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Комбинационная фара</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Фары с электрической регулировкой высоты</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Дополнительный стоп сигнал</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Фара ,освещающая дорогу домой</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Фора для движения автомобиля днем</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="4">Х Кондиционер</td>
+							<td>Климатконтроль</td>
+							<td class="marker">×</td>
+							<td class="marker">×</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Салонный фильтр</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Задний канал для выпуска воздуха </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция индикации температуры воздуха за окном </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						  
+						<tr>
+							<td colspan="2" rowspan="5">Ⅺ. Устройство сигнализации</td>
+							<td>Сигнализирующее устройство не пристегнутого ремня безопасности </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Сигнализирующее устройство незакрытой двери</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Функция поиска автомобиля</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Сигнализирующее устройство не выключенного освещения </td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+							<td class="marker">●</td>
+						</tr>
+						<tr>
+							<td>Предупредительная сигнализация скорости 120км/ч.</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+							<td class="marker">○</td>
+						</tr>
+						<tr>
+							<td colspan="6" style="text-align:left; font-size:10px; padding-top:5px; padding-bottom:5px; padding-left:20px;">примечание：<br/>пояснение символов: “●”Стандарт；“○” опционально；“×”Не доступно.
+							<br/>Информация на данном сайте может быть использована только как ознакомительная. Great Wall Motor Co., Ltd.имеет право в любое время вносить изменения в размещенную на данном сайте информацию без предварительного оповещения, включая, но не ограничиваясь информацией о модельном ряде, ценах, цвете, материалах, об оборудовании или других комплектациях. Всю самую свежую информацию о продукции Great Wall Motors Вы можете получить у дилера Great Wall Motors в вашем городе. </td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="general_slider" id="general_slider">
+	<h2>Галерея</h2>
+	<div class="cd-slider-wrapper">
+		<div class="fotorama" data-nav="thumbs">
+			<img src="images/options/h0.jpg">
+			<img src="images/options/h1.jpg">
+			<img src="images/options/h2.jpg">
+			<img src="images/options/h3.jpg">
+			<img src="images/options/h4.jpg">
+		</div>
+	</div>
+</div>	
+
+<div class="footer clearfix">
+	<div class="bottom_menu clearfix">
+		<ul>
+			<li><a href="">Уведомление</a></li><span></span>
+			<li><a href="">Карта сайта</a></li><span></span>
+			<li><a href="">Загрузить</a></li><span></span>
+			<li><a href="">Контакты</a></li>
+		</ul>
+	</div>
+</div>
+
+</div>
+
+<script src="general_slider/js/jquery.mobile.custom.min.js"></script>
+<script src="general_slider/js/snap.svg-min.js"></script>
+<script src="general_slider/js/main_slid.js"></script>
+<script src="general_slider/js/modernizr.js"></script>
+
+</body>
+</html>
